@@ -1,0 +1,54 @@
+.lembrete-list {
+  margin-bottom: 20px;
+  padding: 15px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  
+  text-align: center;
+}
+
+.lembrete-list h2 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: 1px;
+}
+
+.lembrete-list ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lembrete-list ul .lembrete-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background: linear-gradient(135deg, #ff6f61, #d35d6e);
+  border-radius: 15px;
+  margin-bottom: 20px;
+  width: 80%;
+  margin: 20px auto;
+  transition: background 0.3s ease, transform 0.3s ease;
+  color: #fff;
+
+  &:hover {
+    background: linear-gradient(135deg, #d35d6e, #ff6f61);
+    transform: scale(1.05);
+  }
+
+  span.delete-icon {
+    cursor: pointer;
+    color: #fded0c;
+    transition: color 0.3s ease, transform 0.3s ease;
+
+    &:hover {
+      color: #d9ff00;
+      transform: scale(1.2);
+    }
+  }
+}
